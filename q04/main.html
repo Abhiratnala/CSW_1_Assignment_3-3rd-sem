@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+alert("text:"+$("#xy").text());
+});
+$("#b2").click(function(){
+alert("html:"+$("#xy").html());
+});
+
+});
+</script>
+</head>
+<body>
+<p id="xy">Good morning <b>userrr!!!</b></p>
+<button id="b1">Fetch text</button>
+<button id="b2">Fetch html</button>
+</body>

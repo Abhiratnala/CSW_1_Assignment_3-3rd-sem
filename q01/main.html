@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("body").css("background-color","red");
+});
+$("#b2").click(function(){
+$("body").css("background-color","blue");
+});
+
+$("#b3").click(function(){
+$("body").css("background-color","green");
+});
+$("#b4").click(function(){
+$("#d1").fadeToggle();
+});
+
+
+});
+</script>
+<body>
+<div id="d1" style="border:2px solid black;">
+Good morning
+
+</div>
+<button id="b1">red</button>
+<button id="b2">Blue</button>
+<button id="b3">green</button>
+<button id="b4">Toggle</button>
+</ul>
+</body>
