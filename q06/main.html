@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Q06</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<style>
+.highlight{
+background-color:yellow;
+}
+.dim{
+opacity:0.3;
+}
+.xyz{
+background-color:red;
+}
+</style>
+<script>
+$(document).ready(function(){
+$(".b1").click(function(){
+$("div").removeClass("xyz");
+$("div").addClass("highlight");
+});
+
+$(".b2").click(function(){
+
+$("div").addClass("dim");
+});
+
+});
+</script>
+</head>
+<body>
+<div class="xyz" style="width:400px;height:400px;border:2px solid black;"></div>
+<button class="b1">Add highlight</button>
+<button class="b2">Add dim</button>
+</body>
+</html>
