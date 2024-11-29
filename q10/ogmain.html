@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q10</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+$("#email,#name,#password").mouseenter(function() {
+
+$(this).css("background-color","#add8e6");
+});
+
+
+	$("button").click(function(){
+	const field1=$("#name").val();
+	const field2=$("#email").val();
+	const field3=$("#password").val();
+	if(field1=="" || field2=="" || field3==""){
+alert("all fields must be filled");
+}
+else{
+alert("form submitted");
+}
+	});
+});
+
+</script>
+<style>
+	
+</style>
+
+
+</head>
+<body>
+	<h1>Sign up</h1>
+	<lable for="name">Name</lable><br>
+<div class="a1">
+	<input type="text" id="name" placeholder="Enter Name"><br>
+</div>
+	<lable for="email">Email</lable><br>
+	<input type="text" id="email" pattern="[^@\s]+@[^@\s]+" placeholder="Enter email"><br>
+	<lable for="password">Password</lable><br>
+	<input type="password" id="password" placeholder="Enter Your password"><br>
+	
+	<button>Submit</button><br><br>
+
+
+	
+
+	
+
+</body>
+</html>
